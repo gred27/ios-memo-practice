@@ -17,6 +17,8 @@
 		B5FB98BD23F81E0D00E9B652 /* GredMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB98BC23F81E0D00E9B652 /* GredMemoUITests.swift */; };
 		B5FB98CC23F90BA800E9B652 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB98CB23F90BA800E9B652 /* Memo.swift */; };
 		B5FB98CE23F90CB100E9B652 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB98CD23F90CB100E9B652 /* MemoListTableViewController.swift */; };
+		B5FB98D023F94DAC00E9B652 /* NewMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB98CF23F94DAC00E9B652 /* NewMemoViewController.swift */; };
+		B5FB98D223F9536A00E9B652 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB98D123F9536A00E9B652 /* UIViewController+Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		B5FB98BE23F81E0D00E9B652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5FB98CB23F90BA800E9B652 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		B5FB98CD23F90CB100E9B652 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
+		B5FB98CF23F94DAC00E9B652 /* NewMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMemoViewController.swift; sourceTree = "<group>"; };
+		B5FB98D123F9536A00E9B652 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				B5FB98CA23F90B9000E9B652 /* Model */,
 				B5FB989723F81E0A00E9B652 /* AppDelegate.swift */,
 				B5FB989923F81E0A00E9B652 /* SceneDelegate.swift */,
+				B5FB98CF23F94DAC00E9B652 /* NewMemoViewController.swift */,
+				B5FB98D123F9536A00E9B652 /* UIViewController+Alert.swift */,
 				B5FB989D23F81E0A00E9B652 /* Main.storyboard */,
 				B5FB98CD23F90CB100E9B652 /* MemoListTableViewController.swift */,
 				B5FB98A323F81E0D00E9B652 /* Assets.xcassets */,
@@ -276,8 +282,10 @@
 				B5FB98A223F81E0A00E9B652 /* GredMemo.xcdatamodeld in Sources */,
 				B5FB989823F81E0A00E9B652 /* AppDelegate.swift in Sources */,
 				B5FB98CE23F90CB100E9B652 /* MemoListTableViewController.swift in Sources */,
+				B5FB98D023F94DAC00E9B652 /* NewMemoViewController.swift in Sources */,
 				B5FB989A23F81E0A00E9B652 /* SceneDelegate.swift in Sources */,
 				B5FB98CC23F90BA800E9B652 /* Memo.swift in Sources */,
+				B5FB98D223F9536A00E9B652 /* UIViewController+Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,8 +10,32 @@ import UIKit
 
 class MemoListTableViewController: UITableViewController {
 
+    let formatter: DateFormatter = {
+          let f = DateFormatter()
+          f.dateStyle = .long
+          f.timeStyle = .short
+          f.locale = Locale(identifier: "KO_kr")
+          return f
+      }()
+    
+    var token: NSObjectProtocol?
+    
+    deinit {
+        if let token = token {
+            NotificationCenter.default.removeObserver(token)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        token = NotificationCenter.default.addObserver(forName: NewMemoViewController.newMemoDidInsert, object: nil, queue: OperationQueue.main) {
+            [weak self] (noti) in
+            self?.tableView.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
 
     // MARK: - Table view data source
@@ -26,7 +50,7 @@ class MemoListTableViewController: UITableViewController {
         
         let target = Memo.dummyMemoList[indexPath.row]
         cell.textLabel?.text = target.content
-        cell.detailTextLabel?.text = target.insertDate.description
+        cell.detailTextLabel?.text = formatter.string(from: target.insertDate)
 
         return cell
     }
