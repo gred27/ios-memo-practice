@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5FB989823F81E0A00E9B652 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB989723F81E0A00E9B652 /* AppDelegate.swift */; };
+		B5FB989A23F81E0A00E9B652 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB989923F81E0A00E9B652 /* SceneDelegate.swift */; };
+		B5FB989F23F81E0A00E9B652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FB989D23F81E0A00E9B652 /* Main.storyboard */; };
+		B5FB98A223F81E0A00E9B652 /* GredMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5FB98A023F81E0A00E9B652 /* GredMemo.xcdatamodeld */; };
+		B5FB98A423F81E0D00E9B652 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FB98A323F81E0D00E9B652 /* Assets.xcassets */; };
+		B5FB98A723F81E0D00E9B652 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FB98A523F81E0D00E9B652 /* LaunchScreen.storyboard */; };
+		B5FB98B223F81E0D00E9B652 /* GredMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB98B123F81E0D00E9B652 /* GredMemoTests.swift */; };
+		B5FB98BD23F81E0D00E9B652 /* GredMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB98BC23F81E0D00E9B652 /* GredMemoUITests.swift */; };
+		B5FB98CC23F90BA800E9B652 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB98CB23F90BA800E9B652 /* Memo.swift */; };
+		B5FB98CE23F90CB100E9B652 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB98CD23F90CB100E9B652 /* MemoListTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5FB98AE23F81E0D00E9B652 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FB988C23F81E0A00E9B652 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5FB989323F81E0A00E9B652;
+			remoteInfo = GredMemo;
+		};
+		B5FB98B923F81E0D00E9B652 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FB988C23F81E0A00E9B652 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5FB989323F81E0A00E9B652;
+			remoteInfo = GredMemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5FB989423F81E0A00E9B652 /* GredMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GredMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FB989723F81E0A00E9B652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5FB989923F81E0A00E9B652 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B5FB989E23F81E0A00E9B652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5FB98A123F81E0A00E9B652 /* GredMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GredMemo.xcdatamodel; sourceTree = "<group>"; };
+		B5FB98A323F81E0D00E9B652 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5FB98A623F81E0D00E9B652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5FB98A823F81E0D00E9B652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5FB98AD23F81E0D00E9B652 /* GredMemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GredMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FB98B123F81E0D00E9B652 /* GredMemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GredMemoTests.swift; sourceTree = "<group>"; };
+		B5FB98B323F81E0D00E9B652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5FB98B823F81E0D00E9B652 /* GredMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GredMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FB98BC23F81E0D00E9B652 /* GredMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GredMemoUITests.swift; sourceTree = "<group>"; };
+		B5FB98BE23F81E0D00E9B652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5FB98CB23F90BA800E9B652 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		B5FB98CD23F90CB100E9B652 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5FB989123F81E0A00E9B652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FB98AA23F81E0D00E9B652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FB98B523F81E0D00E9B652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5FB988B23F81E0A00E9B652 = {
+			isa = PBXGroup;
+			children = (
+				B5FB989623F81E0A00E9B652 /* GredMemo */,
+				B5FB98B023F81E0D00E9B652 /* GredMemoTests */,
+				B5FB98BB23F81E0D00E9B652 /* GredMemoUITests */,
+				B5FB989523F81E0A00E9B652 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5FB989523F81E0A00E9B652 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5FB989423F81E0A00E9B652 /* GredMemo.app */,
+				B5FB98AD23F81E0D00E9B652 /* GredMemoTests.xctest */,
+				B5FB98B823F81E0D00E9B652 /* GredMemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5FB989623F81E0A00E9B652 /* GredMemo */ = {
+			isa = PBXGroup;
+			children = (
+				B5FB98CA23F90B9000E9B652 /* Model */,
+				B5FB989723F81E0A00E9B652 /* AppDelegate.swift */,
+				B5FB989923F81E0A00E9B652 /* SceneDelegate.swift */,
+				B5FB989D23F81E0A00E9B652 /* Main.storyboard */,
+				B5FB98CD23F90CB100E9B652 /* MemoListTableViewController.swift */,
+				B5FB98A323F81E0D00E9B652 /* Assets.xcassets */,
+				B5FB98A523F81E0D00E9B652 /* LaunchScreen.storyboard */,
+				B5FB98A823F81E0D00E9B652 /* Info.plist */,
+				B5FB98A023F81E0A00E9B652 /* GredMemo.xcdatamodeld */,
+			);
+			path = GredMemo;
+			sourceTree = "<group>";
+		};
+		B5FB98B023F81E0D00E9B652 /* GredMemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5FB98B123F81E0D00E9B652 /* GredMemoTests.swift */,
+				B5FB98B323F81E0D00E9B652 /* Info.plist */,
+			);
+			path = GredMemoTests;
+			sourceTree = "<group>";
+		};
+		B5FB98BB23F81E0D00E9B652 /* GredMemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5FB98BC23F81E0D00E9B652 /* GredMemoUITests.swift */,
+				B5FB98BE23F81E0D00E9B652 /* Info.plist */,
+			);
+			path = GredMemoUITests;
+			sourceTree = "<group>";
+		};
+		B5FB98CA23F90B9000E9B652 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5FB98CB23F90BA800E9B652 /* Memo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5FB989323F81E0A00E9B652 /* GredMemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5FB98C123F81E0D00E9B652 /* Build configuration list for PBXNativeTarget "GredMemo" */;
+			buildPhases = (
+				B5FB989023F81E0A00E9B652 /* Sources */,
+				B5FB989123F81E0A00E9B652 /* Frameworks */,
+				B5FB989223F81E0A00E9B652 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GredMemo;
+			productName = GredMemo;
+			productReference = B5FB989423F81E0A00E9B652 /* GredMemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5FB98AC23F81E0D00E9B652 /* GredMemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5FB98C423F81E0D00E9B652 /* Build configuration list for PBXNativeTarget "GredMemoTests" */;
+			buildPhases = (
+				B5FB98A923F81E0D00E9B652 /* Sources */,
+				B5FB98AA23F81E0D00E9B652 /* Frameworks */,
+				B5FB98AB23F81E0D00E9B652 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5FB98AF23F81E0D00E9B652 /* PBXTargetDependency */,
+			);
+			name = GredMemoTests;
+			productName = GredMemoTests;
+			productReference = B5FB98AD23F81E0D00E9B652 /* GredMemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5FB98B723F81E0D00E9B652 /* GredMemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5FB98C723F81E0D00E9B652 /* Build configuration list for PBXNativeTarget "GredMemoUITests" */;
+			buildPhases = (
+				B5FB98B423F81E0D00E9B652 /* Sources */,
+				B5FB98B523F81E0D00E9B652 /* Frameworks */,
+				B5FB98B623F81E0D00E9B652 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5FB98BA23F81E0D00E9B652 /* PBXTargetDependency */,
+			);
+			name = GredMemoUITests;
+			productName = GredMemoUITests;
+			productReference = B5FB98B823F81E0D00E9B652 /* GredMemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5FB988C23F81E0A00E9B652 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = gred;
+				TargetAttributes = {
+					B5FB989323F81E0A00E9B652 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					B5FB98AC23F81E0D00E9B652 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B5FB989323F81E0A00E9B652;
+					};
+					B5FB98B723F81E0D00E9B652 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B5FB989323F81E0A00E9B652;
+					};
+				};
+			};
+			buildConfigurationList = B5FB988F23F81E0A00E9B652 /* Build configuration list for PBXProject "GredMemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5FB988B23F81E0A00E9B652;
+			productRefGroup = B5FB989523F81E0A00E9B652 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5FB989323F81E0A00E9B652 /* GredMemo */,
+				B5FB98AC23F81E0D00E9B652 /* GredMemoTests */,
+				B5FB98B723F81E0D00E9B652 /* GredMemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5FB989223F81E0A00E9B652 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FB98A723F81E0D00E9B652 /* LaunchScreen.storyboard in Resources */,
+				B5FB98A423F81E0D00E9B652 /* Assets.xcassets in Resources */,
+				B5FB989F23F81E0A00E9B652 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FB98AB23F81E0D00E9B652 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FB98B623F81E0D00E9B652 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5FB989023F81E0A00E9B652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FB98A223F81E0A00E9B652 /* GredMemo.xcdatamodeld in Sources */,
+				B5FB989823F81E0A00E9B652 /* AppDelegate.swift in Sources */,
+				B5FB98CE23F90CB100E9B652 /* MemoListTableViewController.swift in Sources */,
+				B5FB989A23F81E0A00E9B652 /* SceneDelegate.swift in Sources */,
+				B5FB98CC23F90BA800E9B652 /* Memo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FB98A923F81E0D00E9B652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FB98B223F81E0D00E9B652 /* GredMemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FB98B423F81E0D00E9B652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FB98BD23F81E0D00E9B652 /* GredMemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5FB98AF23F81E0D00E9B652 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5FB989323F81E0A00E9B652 /* GredMemo */;
+			targetProxy = B5FB98AE23F81E0D00E9B652 /* PBXContainerItemProxy */;
+		};
+		B5FB98BA23F81E0D00E9B652 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5FB989323F81E0A00E9B652 /* GredMemo */;
+			targetProxy = B5FB98B923F81E0D00E9B652 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5FB989D23F81E0A00E9B652 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5FB989E23F81E0A00E9B652 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5FB98A523F81E0D00E9B652 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5FB98A623F81E0D00E9B652 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5FB98BF23F81E0D00E9B652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5FB98C023F81E0D00E9B652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5FB98C223F81E0D00E9B652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GredMemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gred.GredMemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5FB98C323F81E0D00E9B652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GredMemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gred.GredMemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5FB98C523F81E0D00E9B652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GredMemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gred.GredMemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GredMemo.app/GredMemo";
+			};
+			name = Debug;
+		};
+		B5FB98C623F81E0D00E9B652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GredMemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gred.GredMemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GredMemo.app/GredMemo";
+			};
+			name = Release;
+		};
+		B5FB98C823F81E0D00E9B652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GredMemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gred.GredMemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GredMemo;
+			};
+			name = Debug;
+		};
+		B5FB98C923F81E0D00E9B652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GredMemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gred.GredMemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GredMemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5FB988F23F81E0A00E9B652 /* Build configuration list for PBXProject "GredMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FB98BF23F81E0D00E9B652 /* Debug */,
+				B5FB98C023F81E0D00E9B652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5FB98C123F81E0D00E9B652 /* Build configuration list for PBXNativeTarget "GredMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FB98C223F81E0D00E9B652 /* Debug */,
+				B5FB98C323F81E0D00E9B652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5FB98C423F81E0D00E9B652 /* Build configuration list for PBXNativeTarget "GredMemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FB98C523F81E0D00E9B652 /* Debug */,
+				B5FB98C623F81E0D00E9B652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5FB98C723F81E0D00E9B652 /* Build configuration list for PBXNativeTarget "GredMemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FB98C823F81E0D00E9B652 /* Debug */,
+				B5FB98C923F81E0D00E9B652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B5FB98A023F81E0A00E9B652 /* GredMemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B5FB98A123F81E0A00E9B652 /* GredMemo.xcdatamodel */,
+			);
+			currentVersion = B5FB98A123F81E0A00E9B652 /* GredMemo.xcdatamodel */;
+			path = GredMemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B5FB988C23F81E0A00E9B652 /* Project object */;
+}
