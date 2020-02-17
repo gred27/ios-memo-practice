@@ -22,8 +22,10 @@ class NewMemoViewController: UIViewController {
             return
         }
         
-        let newMemo = Memo(content: memo)
-        Memo.dummyMemoList.append(newMemo)
+//        let newMemo = Memo(content: memo)
+//        Memo.dummyMemoList.append(newMemo)
+        
+        DataManager.shared.addNewMemo(memo)
         
         NotificationCenter.default.post(name: NewMemoViewController.newMemoDidInsert, object: nil)
         dismiss(animated: true, completion: nil)
