@@ -78,6 +78,13 @@
                                             <segue destination="2hn-Xg-ehE" kind="presentation" id="Fta-tO-uMb"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vQ5-41-mDf"/>
+                                    <barButtonItem systemItem="trash" id="T5G-tg-3Pu">
+                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="deleteMemo:" destination="c9F-S2-2zC" id="ogQ-Ky-J0K"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eg6-VH-tRy">
@@ -137,6 +144,9 @@
                         <viewLayoutGuide key="safeArea" id="e7L-kG-cxj"/>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="MEX-M7-o2L"/>
+                    <connections>
+                        <outlet property="memoTableView" destination="eg6-VH-tRy" id="l1v-Gw-xeK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ufm-Vd-H8k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

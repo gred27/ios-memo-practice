@@ -1,0 +1,6 @@
+framework module Pods_GredMemo {
+  umbrella header "Pods-GredMemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
