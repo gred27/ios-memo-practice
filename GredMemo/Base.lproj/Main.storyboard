@@ -178,7 +178,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="nQH-Xp-uqn"/>
                                     <barButtonItem systemItem="done" id="E0u-9U-dhh">
                                         <connections>
-                                            <action selector="editDone:" destination="92z-0A-Jt0" id="fgV-6X-QAw"/>
+                                            <action selector="editDoneHideKeyboard:" destination="92z-0A-Jt0" id="NPX-bD-OAM"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>

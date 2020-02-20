@@ -76,7 +76,7 @@ class NewMemoViewController: UIViewController {
     }
     
     @IBAction func editDoneHideKeyboard(_ sender: Any){
-        
+        view.endEditing(true)
     }
     
     
