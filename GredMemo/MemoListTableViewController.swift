@@ -37,6 +37,7 @@ class MemoListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.tableFooterView = UIView()
         token = NotificationCenter.default.addObserver(forName: NewMemoViewController.newMemoDidInsert, object: nil, queue: OperationQueue.main) { [weak self] (noti) in
             self?.tableView.reloadData()
         }

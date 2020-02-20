@@ -14,17 +14,24 @@ class NewMemoViewController: UIViewController {
     var originalMemoContent: String?
     
     @IBOutlet weak var memoTextView: UITextView!
+    @IBOutlet weak var memoToolbar: UIToolbar!
     
+    
+    // 메모 수정 뷰 저장 없이 닫기
     @IBAction func close (_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
+    // 메모 저장 후 닫기
     @IBAction func save (_ sender: Any) {
+        
+        // 메모 입력을 하지 않았으면
         guard let memo = memoTextView.text, memo.count > 0 else {
             alert(message: "메모를 입력하세요")
             return
         }
         
+        // 메모 수정 모드인지 새 메모 생성 모드인지 구분
         if let target = editTarget {
             target.content = memo
             DataManager.shared.saveContext()
@@ -34,10 +41,46 @@ class NewMemoViewController: UIViewController {
             NotificationCenter.default.post(name: NewMemoViewController.newMemoDidInsert, object: nil)
         }
         
-
         dismiss(animated: true, completion: nil)
     }
     
+    
+    // 앨범, 카메라에서 이미지 추가
+    var picker = UIImagePickerController()
+    
+    @IBAction func addImage (_ sender: Any?) {
+        print("click image")
+        
+        // 모드를 고를 alert 생성
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)
+        
+        let cameraAction = UIAlertAction(title: "사진 찍기", style: .default) {
+            [weak self] (action) in
+            self?.picker.sourceType = .camera
+            self?.present(self!.picker, animated: true, completion: nil)
+        }
+        
+        let libraryAction = UIAlertAction(title: "사진 보관함", style: .default) {
+            [weak self] (action) in
+            self?.picker.sourceType = .photoLibrary
+            self?.present(self!.picker, animated: true, completion: nil)
+            
+        }
+        
+        let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
+        alert.addAction(cameraAction)
+        alert.addAction(libraryAction)
+        alert.addAction(cancel)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func editDoneHideKeyboard(_ sender: Any){
+        
+    }
+    
+    
+    // 키보드 상태 확인할 토큰, 옵저버 생성
     var willShowToken: NSObjectProtocol?
     var willHiddenToken: NSObjectProtocol?
     
@@ -50,8 +93,12 @@ class NewMemoViewController: UIViewController {
             NotificationCenter.default.removeObserver(token)
         }
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // 수정, 생성 모드 구분
         if let memo = editTarget {
             navigationItem.title = "edit"
             memoTextView.text = memo.content
@@ -60,9 +107,13 @@ class NewMemoViewController: UIViewController {
             navigationItem.title = "new Memo"
             memoTextView.text = ""
         }
+        
+        // 툴바를 키보드 위에 붙임
+        memoTextView.inputAccessoryView = memoToolbar
+        
         memoTextView.delegate = self
         
-        // when keyboard show
+        // 키보드 보일 때
         willShowToken = NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: OperationQueue.main, using: { [weak self] (noti) in
             guard let strongSelf = self else {
                 return
@@ -77,10 +128,10 @@ class NewMemoViewController: UIViewController {
                 inset = strongSelf.memoTextView.scrollIndicatorInsets
                 inset.bottom = height
                 strongSelf.memoTextView.scrollIndicatorInsets = inset
-                
             }
         })
         
+        // 키보드 없어질 때
         willHiddenToken = NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: OperationQueue.main, using: { [weak self] (noit) in
             guard let strongSelf = self else {
                 return
@@ -93,8 +144,9 @@ class NewMemoViewController: UIViewController {
             inset = strongSelf.memoTextView.scrollIndicatorInsets
             inset.bottom = 0
             strongSelf.memoTextView.scrollIndicatorInsets = inset
-            
         })
+        
+        picker.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -153,4 +205,8 @@ extension NewMemoViewController: UIAdaptivePresentationControllerDelegate {
 extension NewMemoViewController {
     static let newMemoDidInsert = Notification.Name(rawValue: "newMemoDidInsert")
     static let memoDidChange = Notification.Name(rawValue: "memoDidChange")
+}
+
+extension NewMemoViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
 }
