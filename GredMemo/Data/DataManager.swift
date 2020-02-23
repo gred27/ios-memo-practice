@@ -39,6 +39,7 @@ class  DataManager {
         let newMemo = Memo(context: mainContext)
         newMemo.content = memo
         newMemo.insertDate = Date()
+    
         
         memoList.insert(newMemo, at: 0)
         

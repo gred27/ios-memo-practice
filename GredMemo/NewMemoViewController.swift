@@ -12,9 +12,11 @@ class NewMemoViewController: UIViewController {
     
     var editTarget: Memo?
     var originalMemoContent: String?
+    var imageList: [UIImage]? = []
     
     @IBOutlet weak var memoTextView: UITextView!
     @IBOutlet weak var memoToolbar: UIToolbar!
+    @IBOutlet weak var imageCollectionView: UICollectionView!
     
     
     // 메모 수정 뷰 저장 없이 닫기
@@ -78,6 +80,8 @@ class NewMemoViewController: UIViewController {
     @IBAction func editDoneHideKeyboard(_ sender: Any){
         view.endEditing(true)
     }
+    
+    
     
     
     // 키보드 상태 확인할 토큰, 옵저버 생성
@@ -147,6 +151,9 @@ class NewMemoViewController: UIViewController {
         })
         
         picker.delegate = self
+        imageCollectionView.delegate = self
+        imageCollectionView.dataSource = self
+        imageCollectionView.register(CustomCollectionCell.self, forCellWithReuseIdentifier: "imageCell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -208,5 +215,45 @@ extension NewMemoViewController {
 }
 
 extension NewMemoViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        print("imagepick")
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            self.imageList?.append(image)
+        }
+        
+        self.imageCollectionView?.reloadData()
+        dismiss(animated: true, completion: nil)
+    }
     
+
+}
+
+extension NewMemoViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! CustomCollectionCell
+        
+        if self.imageList?.count ?? 0 > 0 {
+            let image = imageList?[indexPath.row]
+            cell.imageView?.image = image
+        }
+        
+        return cell
+    }
+    
+    
+}
+
+extension NewMemoViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width:40,height:40)
+        
+    }
+}
+
+class CustomCollectionCell: UICollectionViewCell {
+    @IBOutlet weak var imageView:UIImageView!
 }
