@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18301529A64AD1B0DDEDD536 /* Pods_GredMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9603BC7F0C370FA1BD807FC5 /* Pods_GredMemo.framework */; };
-		A8341D3F53994B008B577C07 /* Pods_GredMemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AB014FE596FA6F0CC09B48 /* Pods_GredMemoTests.framework */; };
 		B5991C0F23FA9807007D7A8E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5991C0E23FA9807007D7A8E /* DataManager.swift */; };
 		B5FB989823F81E0A00E9B652 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB989723F81E0A00E9B652 /* AppDelegate.swift */; };
 		B5FB989A23F81E0A00E9B652 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB989923F81E0A00E9B652 /* SceneDelegate.swift */; };
@@ -23,7 +21,6 @@
 		B5FB98D023F94DAC00E9B652 /* NewMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB98CF23F94DAC00E9B652 /* NewMemoViewController.swift */; };
 		B5FB98D223F9536A00E9B652 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB98D123F9536A00E9B652 /* UIViewController+Alert.swift */; };
 		B5FB98D423F95EEA00E9B652 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB98D323F95EEA00E9B652 /* DetailViewController.swift */; };
-		FCF444EF85B68138C0A29C10 /* Pods_GredMemo_GredMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78845F4ADB63592673B8653B /* Pods_GredMemo_GredMemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14AB014FE596FA6F0CC09B48 /* Pods_GredMemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GredMemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22861D4484815CB9F4AE0EC8 /* Pods-GredMemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GredMemoTests.debug.xcconfig"; path = "Target Support Files/Pods-GredMemoTests/Pods-GredMemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		26F724C3E86B4248AA0505EE /* Pods-GredMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GredMemo.release.xcconfig"; path = "Target Support Files/Pods-GredMemo/Pods-GredMemo.release.xcconfig"; sourceTree = "<group>"; };
-		6C9E1EEEBFC75243F82804FB /* Pods-GredMemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GredMemoTests.release.xcconfig"; path = "Target Support Files/Pods-GredMemoTests/Pods-GredMemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		7428DDB9590D3DC74D969E3B /* Pods-GredMemo-GredMemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GredMemo-GredMemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-GredMemo-GredMemoUITests/Pods-GredMemo-GredMemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		78845F4ADB63592673B8653B /* Pods_GredMemo_GredMemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GredMemo_GredMemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		801FAD77A2F89315DB1DEA60 /* Pods-GredMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GredMemo.debug.xcconfig"; path = "Target Support Files/Pods-GredMemo/Pods-GredMemo.debug.xcconfig"; sourceTree = "<group>"; };
-		9603BC7F0C370FA1BD807FC5 /* Pods_GredMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GredMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5991C0E23FA9807007D7A8E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B5FB989423F81E0A00E9B652 /* GredMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GredMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FB989723F81E0A00E9B652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,7 +61,6 @@
 		B5FB98CF23F94DAC00E9B652 /* NewMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMemoViewController.swift; sourceTree = "<group>"; };
 		B5FB98D123F9536A00E9B652 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		B5FB98D323F95EEA00E9B652 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		DF4A43E7B048F0956EDACDCF /* Pods-GredMemo-GredMemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GredMemo-GredMemoUITests.release.xcconfig"; path = "Target Support Files/Pods-GredMemo-GredMemoUITests/Pods-GredMemo-GredMemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18301529A64AD1B0DDEDD536 /* Pods_GredMemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8341D3F53994B008B577C07 /* Pods_GredMemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCF444EF85B68138C0A29C10 /* Pods_GredMemo_GredMemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,8 +103,6 @@
 				B5FB98B023F81E0D00E9B652 /* GredMemoTests */,
 				B5FB98BB23F81E0D00E9B652 /* GredMemoUITests */,
 				B5FB989523F81E0A00E9B652 /* Products */,
-				CA9B07913A4A734196E3277B /* Pods */,
-				D8FD47C186CD42C26400A561 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,29 +162,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CA9B07913A4A734196E3277B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				801FAD77A2F89315DB1DEA60 /* Pods-GredMemo.debug.xcconfig */,
-				26F724C3E86B4248AA0505EE /* Pods-GredMemo.release.xcconfig */,
-				7428DDB9590D3DC74D969E3B /* Pods-GredMemo-GredMemoUITests.debug.xcconfig */,
-				DF4A43E7B048F0956EDACDCF /* Pods-GredMemo-GredMemoUITests.release.xcconfig */,
-				22861D4484815CB9F4AE0EC8 /* Pods-GredMemoTests.debug.xcconfig */,
-				6C9E1EEEBFC75243F82804FB /* Pods-GredMemoTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		D8FD47C186CD42C26400A561 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9603BC7F0C370FA1BD807FC5 /* Pods_GredMemo.framework */,
-				78845F4ADB63592673B8653B /* Pods_GredMemo_GredMemoUITests.framework */,
-				14AB014FE596FA6F0CC09B48 /* Pods_GredMemoTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,7 +169,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5FB98C123F81E0D00E9B652 /* Build configuration list for PBXNativeTarget "GredMemo" */;
 			buildPhases = (
-				BBBBFBED1BE435E971835D4B /* [CP] Check Pods Manifest.lock */,
 				B5FB989023F81E0A00E9B652 /* Sources */,
 				B5FB989123F81E0A00E9B652 /* Frameworks */,
 				B5FB989223F81E0A00E9B652 /* Resources */,
@@ -227,7 +186,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5FB98C423F81E0D00E9B652 /* Build configuration list for PBXNativeTarget "GredMemoTests" */;
 			buildPhases = (
-				1654D9896337EB3401DDFBB9 /* [CP] Check Pods Manifest.lock */,
 				B5FB98A923F81E0D00E9B652 /* Sources */,
 				B5FB98AA23F81E0D00E9B652 /* Frameworks */,
 				B5FB98AB23F81E0D00E9B652 /* Resources */,
@@ -246,7 +204,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5FB98C723F81E0D00E9B652 /* Build configuration list for PBXNativeTarget "GredMemoUITests" */;
 			buildPhases = (
-				1CC44B7BACF09D908DB1C46A /* [CP] Check Pods Manifest.lock */,
 				B5FB98B423F81E0D00E9B652 /* Sources */,
 				B5FB98B523F81E0D00E9B652 /* Frameworks */,
 				B5FB98B623F81E0D00E9B652 /* Resources */,
@@ -330,75 +287,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1654D9896337EB3401DDFBB9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GredMemoTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1CC44B7BACF09D908DB1C46A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GredMemo-GredMemoUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BBBBFBED1BE435E971835D4B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GredMemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5FB989023F81E0A00E9B652 /* Sources */ = {
@@ -584,7 +472,6 @@
 		};
 		B5FB98C223F81E0D00E9B652 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 801FAD77A2F89315DB1DEA60 /* Pods-GredMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -604,7 +491,6 @@
 		};
 		B5FB98C323F81E0D00E9B652 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26F724C3E86B4248AA0505EE /* Pods-GredMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -624,7 +510,6 @@
 		};
 		B5FB98C523F81E0D00E9B652 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22861D4484815CB9F4AE0EC8 /* Pods-GredMemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -646,7 +531,6 @@
 		};
 		B5FB98C623F81E0D00E9B652 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C9E1EEEBFC75243F82804FB /* Pods-GredMemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -668,7 +552,6 @@
 		};
 		B5FB98C823F81E0D00E9B652 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7428DDB9590D3DC74D969E3B /* Pods-GredMemo-GredMemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -688,7 +571,6 @@
 		};
 		B5FB98C923F81E0D00E9B652 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF4A43E7B048F0956EDACDCF /* Pods-GredMemo-GredMemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
